@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UN Goals Step 3</title>
+
+<Style>
+  body {
+    font-family; Arial, Helvetica, sans-serif
+  }
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.home {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 2000;
+}
+.btn {
+  background-color: lightgrey;
+  border-radius: 20px;
+    font-size: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class = "home">
+  <form  action="../index.html">
+      <input class = "btn" type="submit" value="HOME" />
+  </form>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/un-01.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style = "background-color: #EB1C23">
+      <h3>No Poverty</h3>
+      <p>How does our economic status determine the way we live?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/un-02.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style = "background-color: #d3a029">
+      <h3>Zero Hunger</h3>
+      <p>How can we effectively use GMOs in preventing food shortages</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/un-03.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style = "background-color: #279B48">
+      <h3>Good Health and Well-Being</h3>
+      <p>How do we negotiate with anti-vaccine parents?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/un-04.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style = "background-color: #C31F33">
+      <h3>Quality Education</h3>
+      <p>What are the teaching conditions for children in third-world countries?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/un-05.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style = "background-color: #EF402B">
+      <h3>Gender Equality</h3>
+      <p>Are traces of microaggression common in male-dominated workplace?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/un-06.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style = "background-color: #00AED9">
+      <h3>Clean Water and Sanitation</h3>
+      <p>How do we process agricultural and industrial waste waters?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/un-07.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style = "background-color: #F99D26">
+      <h3>Affordable and Clean Energ</h3>
+      <p>What are the most cost-efficient sources of renewable energy?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/un-08.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style = "background-color: #8F1838">
+      <h3>Decent Work and Economic Growth</h3>
+      <p>Do tariffs eventually harm the domestic economy?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/un-09.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style = "background-color: #f36d2f">
+      <h3>Industriy, Innovation and Infrastructure</h3>
+      <p>How do we motivate workers?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/un-10.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style = "background-color: #FF1484">
+      <h3>Reduced Inequalities</h3>
+      <p>How do social media movements positively contribute to reducing inequality?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/un-11.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style = "background-color: #F99D26">
+      <h3>Sustainable Cities and Communities</h3>
+      <p>Should we prioritize sustainable energy over industrial development?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <img src="images/un-12.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style="background-color: #CF8D2A;">
+      <h3>Responsible Consumption and Production</h3>
+      <p>How can we minimize food waste in restaurants?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <img src="images/un-13.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style="background-color: #48773E;">
+      <h3>Climate Action</h3>
+      <p>Should we focus more on cliimate adaptation or climate prevention?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <img src="images/un-14.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style="background-color: #007DBC;">
+      <h3>Life Below Water</h3>
+      <p>How can we protect endangered coral reefs?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <img src="images/un-15.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style="background-color: #3EB049;">
+      <h3>Life on Land</h3>
+      <p>How can we prevent invasive species?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <img src="images/un-16.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style="background-color: #02558B;">
+      <h3>Peace, Justice and Strong Institution</h3>
+      <p>What are our rights and responsibilities as a species?</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <img src="images/un-17.png" alt="Avatar" style="width:300px; height:300px;"/>
+    </div>
+    <div class="flip-box-back" style="background-color: #183668;">
+      <h3>Partnerships for the Goals</h3>
+      <p>How long would the full achievement of these goals take?</p>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
